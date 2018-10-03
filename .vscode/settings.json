@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.env.osx": {
+        "PATH": "/Users/odiaz/.platformio/penv/bin:/Users/odiaz/.platformio/penv:/usr/local/opt/qt5/bin:/Library/Frameworks/Python.framework/Versions/3.5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/opt/X11/bin:/Applications/microchip/xc16/v1.30/bin:/Applications/microchip/xc8/v1.41/bin:/Applications/microchip/xc16/v1.31/bin",
+        "PLATFORMIO_CALLER": "vscode"
+    }
+}
