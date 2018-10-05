@@ -105,7 +105,7 @@ void loop() {
  // }
 // Prepare the response
   String s = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE HTML>\r\n<html>\r\nGPIO is now ";
-  s += (val)?"OFF":"_ON";
+  s += (val)?"_ON":"OFF";
   s += "</html>\n";
 
   // Send the response to the client
