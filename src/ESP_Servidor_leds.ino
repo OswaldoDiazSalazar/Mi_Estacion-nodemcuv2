@@ -4,7 +4,7 @@ int pinDHT11 = D0;
 SimpleDHT11 dht11;
 #include "Adafruit_BMP085.h"
 #include "Wire.h"
-#define P0 102750
+#define P0 100800
 Adafruit_BMP085 bmp;
 const char ssid[] = "NOS-9D9E";
 const char pass[] = "5VNL9AY6";
@@ -13,10 +13,10 @@ byte humedad = 0;
 float luminosidad = 0;
 double T,P,A;
 int val = 0;
-char resultL[8];
-char resultT[8];
-char resultP[8];
-char resultA[8]; 
+char resultL[10];
+char resultT[10];
+char resultP[10];
+char resultA[10]; 
 // Create an instance of the server
 // specify the port to listen on as an argument
 WiFiServer server(80);
@@ -150,10 +150,10 @@ void leer_sensores() {
   A = bmp.readAltitude(P0)-10;
  
 
-  dtostrf(luminosidad, 6, 2, resultL);
-  dtostrf(T, 6, 2, resultT);
-  dtostrf(P, 6, 2, resultP);
-  dtostrf(A, 6, 2, resultA);
+  dtostrf(luminosidad, 8, 2, resultL);
+  dtostrf(T, 8, 2, resultT);
+  dtostrf(P, 8, 2, resultP);
+  dtostrf(A, 8, 2, resultA);
   //    if(T !=0 )  {
   //      Serial.print("T = \t");Serial.print(T,2); Serial.print(" degC\t");
   //      Serial.print("P = \t");Serial.print(P,2); Serial.print(" mBar\t");
